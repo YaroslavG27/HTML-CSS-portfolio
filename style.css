@@ -1,0 +1,38 @@
+.topcontainer{
+    font-family: 'Bitter', serif;
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 2rem;
+    background-color: rgba(146, 144, 144, 0.463);
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+h1, h2, .picture, .study, .udemy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+}
+
+.study {
+    background-color: rgba(146, 144, 144, 0.463);
+    padding: 1rem;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+body{
+    margin: 0;
+}
