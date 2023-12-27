@@ -3,15 +3,17 @@
     font-family: 'Playfair Display', serif;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    padding: 2rem;
-    background-color: rgba(146, 144, 144, 0.463);
+    padding: 1rem;
+    background-color: rgba(109, 203, 211, 0.497);
 }
 
 .profile {
-    border-radius: 50%;
+    margin-top: -50px;
+    border-radius: 55%;
+    border: 1px solid rgba(0, 0, 0, 0.192);
 }
 
-h1, h2, .picture, .study, .udemy {
+h1, h2, .picture, .udemy {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +23,15 @@ h1, h2, .picture, .study, .udemy {
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding: 1rem;
+    background-color: rgba(109, 203, 211, 0.497);
 }
-
-.study {
-    background-color: rgba(146, 144, 144, 0.463);
+.paragraf{
+    background-color: rgba(239, 239, 239, 0.628);
     padding: 1rem;
+    border-radius: 6px;
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+    margin-top: -20px;
 }
 .footer {
     display: flex;
