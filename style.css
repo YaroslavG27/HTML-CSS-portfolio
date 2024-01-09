@@ -1,44 +1,40 @@
-.topcontainer{
-    font-family: 'Bitter', serif;
-    font-family: 'Playfair Display', serif;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 1rem;
-    background-color: rgba(109, 203, 211, 0.497);
-}
-
-.profile {
-    margin-top: -50px;
-    border-radius: 55%;
-    border: 1px solid rgba(0, 0, 0, 0.192);
-}
-
-h1, h2, .picture, .udemy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.aboutme {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding: 1rem;
-    background-color: rgba(109, 203, 211, 0.497);
-}
-.paragraf{
-    background-color: rgba(239, 239, 239, 0.628);
-    padding: 1rem;
-    border-radius: 6px;
-    margin-top: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.192);
-    margin-top: -20px;
-}
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-body{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-picture {
+    /* Estilo para la foto de perfil */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    /* Agrega más estilos según tus preferencias */
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.about-me,
+.contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
 }

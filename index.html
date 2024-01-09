@@ -1,36 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Yaroslav Guerra</title>
-    <link href="./style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Nombre - Professional</title>
 </head>
 <body>
-    
-    <div class="topcontainer">
-        <h1>Hi i'm Yaroslav</h1>
-        <h2>
-            A beginner programmer
-        </h2>
-    </div>
-    <hr>
-        <div class="aboutme">
-            <div class="picture">
-            <img class="profile" src="./IMG_6023.jpg" alt="My profile picture" height=" 150px">
-            </div>
-            <div class="paragraf">
-            <p>
-                Highly motivated and detail-oriented professional with a background in administrative management and a passion for technology. A Czech national born in Venezuela, I have a strong educational foundation in science and extensive experience in the hospitality and customer service industries. Currently self-studying programming, I am well-versed in various aspects of technology, especially electronic gadgets related to cameras, smartphones, gimbals, drones, and more.
-            </p>
-            </div>
-        </div>   
-        <div class="udemy">
-            <img src="./Udemy New 2021.svg" height="100px">
+    <header>
+        <div class="profile-picture">
+            <img src="./IMG_6023.jpg" alt="profilepic" width="100"><!-- Agrega aquí tu foto de perfil -->
         </div>
-        <footer>
-            <div class="footer">
-                <a href="https://facebook.com"><img src="./facebook-svgrepo-com.svg" height="30px"></a><a href="https://twitter.com"><img src="./Twitter X.svg" height="30px"></a><a href="https://instagram.com"><img src="./instagram-svgrepo-com.svg" height="30px"></a>
-            </div>
-        </footer>
+        <h1>Tu Nombre</h1>
+    </header>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Highly motivated and detail-oriented professional with a background in administrative management and a passion for technology...</p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="email-container">
+            <p>Email: <span id="email">tunombre@example.com</span></p>
+            <button onclick="copyToClipboard()">Copy Email</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
