@@ -11,12 +11,15 @@ function copyToClipboard() {
 
     document.body.removeChild(tempInput);
 
-    // Cambiar el texto del botón después de copiar
+    // Obtener el botón y su elemento hijo
     const copyButton = document.querySelector('button');
-    copyButton.innerHTML = '<img src="./copy-svgrepo-com.svg" alt="Copy Icon"> Copied!';
-    
-    // Restaurar el texto original después de un tiempo (por ejemplo, 2 segundos)
+    const textSpan = copyButton.querySelector('.text-span');
+
+    // Cambiar el contenido del botón después de copiar
+    textSpan.textContent = 'Copied!';
+
+    // Restaurar el contenido original después de un tiempo (por ejemplo, 2 segundos)
     setTimeout(() => {
-        copyButton.innerHTML = '<img src="./copy-svgrepo-com.svg" alt="Copy Icon"> Copy Email';
+        textSpan.textContent = 'Copy Email';
     }, 2000);
 }
