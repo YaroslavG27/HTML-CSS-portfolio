@@ -26,8 +26,15 @@ h1 {
     margin-top: 10px;
 }
 
-.about-me,
+.about-me{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
 .contact {
+    background-color: #333;
+    color: #fff;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
