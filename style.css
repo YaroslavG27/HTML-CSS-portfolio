@@ -44,4 +44,19 @@ h1 {
 button {
     cursor: pointer;
     padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555; /* Cambiar a un tono más ligero */
+}
+
+button img {
+    margin-right: 5px;
 }

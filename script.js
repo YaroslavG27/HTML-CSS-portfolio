@@ -2,17 +2,21 @@ function copyToClipboard() {
     const emailElement = document.getElementById('email');
     const emailText = emailElement.innerText;
 
-    // Crear un elemento temporal (input) para copiar el texto
     const tempInput = document.createElement('input');
     tempInput.value = emailText;
     document.body.appendChild(tempInput);
 
-    // Seleccionar y copiar el texto
     tempInput.select();
     document.execCommand('copy');
 
-    // Eliminar el elemento temporal
     document.body.removeChild(tempInput);
 
-    // Puedes agregar aquí algún mensaje de confirmación
+    // Cambiar el texto del botón después de copiar
+    const copyButton = document.querySelector('button');
+    copyButton.innerHTML = '<img src="./copy-svgrepo-com.svg" alt="Copy Icon"> Copied!';
+    
+    // Restaurar el texto original después de un tiempo (por ejemplo, 2 segundos)
+    setTimeout(() => {
+        copyButton.innerHTML = '<img src="./copy-svgrepo-com.svg" alt="Copy Icon"> Copy Email';
+    }, 2000);
 }
